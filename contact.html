@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .dropdown-menu .dropdown-item:hover,
+        .dropdown-menu .dropdown-item:focus {
+            background-color: rgb(6, 6, 49);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2 fw-bold text-primary-emphasis" href="#">UCEE SUITES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav nav-underline fw-bold ">
+                    <li class="nav-item p-3">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="rooms.html">Rooms & Suites</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link " href="facilities.html">Facilities</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link active text-primary-emphasis" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item p-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Events
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item fw-semibold" href="wedding.html">Wedding Planner</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="birthday.html">Birthday Planner</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="party.html">Party Planner</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="card text-bg-dark mb-5">
+        <img src="/images/Contact Us.png" class="card-img opacity-25" data-aos="fade-up" alt="...">
+        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title fs-1 fw-bolder" data-aos="fade-up" data-aos-delay="200">CONTACT US</h5>
+        </div>
+    </div>
+
+
+    <!-- Form -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="fs-5 fw-semibold text-center text-secondary-emphasis mb-2" data-aos="fade-right"
+                    data-aos-delay="200">
+                    We’ll love to hear your feedback. Kindly send us a mail
+                </div>
+                <div class="my-3" data-aos="fade-up">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                    <input type="text" class="form-control border-primary" id="name" placeholder="Your name">
+                </div>
+                <div class="my-3" data-aos="fade-up">
+                    <label for="exampleFormControlInput2" class="form-label"></label>
+                    <input type="email" class="form-control border-primary" id="email" placeholder="Your email">
+                </div>
+                <div class="mb-5" data-aos="fade-up">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <textarea class="form-control border-primary" id="message" placeholder="Your text"
+                        rows="8"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary w-100 fw-semibold py-1" onclick="sendMail()">Send
+                    Message</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- contact -->
+    <div class="container-fluid mt-5 pe-5 me-5 text-primary-emphasis">
+        <div class="row justify-content-even align-items-center">
+            <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex flex-column align-items-center fs-4 fw-semibold">
+                <p>
+                    <i class='bx bx-phone'></i> +2348109331124
+                </p>
+            </div>
+            <div class="col-12 col-md-4 mb-3 mb-md-0 d-flex flex-column align-items-center fs-4 fw-semibold">
+                <p>
+                    <i class='bx bx-envelope'></i> collinsuche89@gmail.com
+                </p>
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-column align-items-center fs-4 fw-semibold">
+                <p>
+                    <i class='bx bx-location'></i> No. 4, Kalar Street, Okpanam, Asaba
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark d-flex flex-column flex-md-row justify-content-center align-items-center mt-5">
+        <div
+            class="text-light col-12 col-md-4 d-flex flex-column align-items-center justify-content-evenly py-5 text-decoration-none">
+            <p class="fs-4 fw-bold">UCEE SUITES</p>
+            <p>To meet all your hospitality needs</p>
+            <p>Address : No. 4, Kalar Street, Okpanam, Asaba</p>
+            <p>Phone number : +2348109331124</p>
+            <p>Email: collinsuche89@gmail.com</p>
+        </div>
+        <div
+            class="text-light fw-bold fs-5 col-12 col-md-4 d-flex flex-column align-items-center justify-content-center py-5">
+            <p><a class="text-decoration-none text-light" href="index.html">ABOUT US</a></p>
+            <p><a class="text-decoration-none text-light" href="contact.html">CONTACT US</a></p>
+            <p><a class="text-decoration-none text-light" href="rooms.html">ROOMS & RATES</a></p>
+            <p><a class="text-decoration-none text-light" href="facilities.html">FACILITIES</a></p>
+        </div>
+        <div
+            class="text-light fw-bold fs-5 col-12 col-md-4 d-flex flex-column align-items-center justify-content-even py-5 text-decoration-none">
+            <p><a class="text-decoration-none text-light" href="https://www.facebook.com" target="_blank">FACEBOOK</a>
+            </p>
+            <p><a class="text-decoration-none text-light" href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
+            </p>
+            <p><a class="text-decoration-none text-light" href="https://www.x.com" target="_blank">TWITTER</a></p>
+            <p><a class="text-decoration-none text-light" href="https://www.snapchat.com" target="_blank">SNAPCHAT</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000, // animation duration
+            once: true, // animation happens only once
+        });
+    </script>
+
+    <script src="/JS/contact.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "MsgbpCYikTILZMfwY",
+            });
+        })();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        .dropdown-menu .dropdown-item:hover,
+        .dropdown-menu .dropdown-item:focus {
+            background-color: rgb(6, 6, 49);
+            color: white;
+        }
+
+        .btn a {
+            text-decoration: none;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2 fw-bold text-primary-emphasis" href="#">UCEE SUITES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav nav-underline fw-bold ">
+                    <li class="nav-item p-3">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="rooms.html">Rooms & Suites</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link " href="facilities.html">Facilities</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item p-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Events
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item fw-semibold" href="wedding.html">Wedding Planner</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="birthday.html">Birthday Planner</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="party.html">Party Planner</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+
+        <!-- Step Progress -->
+        <div class="d-flex justify-content-center mb-4">
+            <div class="d-flex align-items-center">
+                <div class="rounded-circle bg-primary text-white px-3 py-2">1</div>
+                <div class="mx-2">────</div>
+                <div class="rounded-circle bg-secondary text-white px-3 py-2">2</div>
+                <div class="mx-2">────</div>
+                <div class="rounded-circle bg-secondary text-white px-3 py-2">3</div>
+            </div>
+        </div>
+
+        <!-- Booking Info -->
+        <div class="text-center mb-5">
+            <h3 class="fw-bold text-primary-emphasis">Booking Information</h3>
+            <p class="text-muted">Please fill up the blank fields below</p>
+        </div>
+
+        <!-- Main Content Row -->
+        <div class="row g-4 justify-content-center">
+
+            <!-- Left Card -->
+            <div class="col-md-5">
+                <div class="card border-0">
+                    <img src="/images/pay.png" class="card-img-top" alt="Room Image">
+                    <div class="card-body d-flex">
+                        <h5 class="card-title mb-1">Pado Wae</h5> <br>
+                        <p class="text-muted small mb-2">Mataram, Indonesia</p>
+                        <h6 class="fw-bold">$480 USD <small class="text-muted">for 2 nights</small></h6>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vertical Divider -->
+            <div class="col-md-1 d-none d-md-flex align-items-center">
+                <div class="border-start h-100 ms-5"></div>
+            </div>
+
+            <!-- Form -->
+            <div class="col-md-5">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold text-primary-emphasis">First Name</label>
+                        <input type="text"
+                            class="form-control border border-0 bg-secondary fw-semibold text-primary-emphasis"
+                            placeholder="Enter your first name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold text-primary-emphasis">Last Name</label>
+                        <input type="text"
+                            class="form-control border border-0 bg-secondary fw-semibold text-primary-emphasis"
+                            placeholder="Enter your last name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold text-primary-emphasis">Email Address</label>
+                        <input type="email"
+                            class="form-control border border-0 bg-secondary fw-semibold text-primary-emphasis"
+                            placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold text-primary-emphasis">Phone Number</label>
+                        <input type="tel"
+                            class="form-control border border-0 bg-secondary fw-semibold text-primary-emphasis"
+                            placeholder="Enter your phone number">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="d-flex flex-column align-items-center gap-3 mt-5">
+            <button class="btn btn-primary px-5 w-25"><a href="pay2.html"
+                    class="btn btn-primary fw-semibold">Continue to Book</a></button>
+            <button class="btn btn-secondary px-5 w-25"><a href="index.html"
+                    class="btn fw-semibold">Cancel</a></button>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark d-flex flex-column flex-md-row justify-content-center align-items-center mt-5">
+        <div
+            class="text-light col-12 col-md-4 d-flex flex-column align-items-center justify-content-evenly py-5 text-decoration-none">
+            <p class="fs-4 fw-bold">UCEE SUITES</p>
+            <p>To meet all your hospitality needs</p>
+            <p>Address : No. 4, Kalar Street, Okpanam, Asaba</p>
+            <p>Phone number : +2348109331124</p>
+            <p>Email: collinsuche89@gmail.com</p>
+        </div>
+        <div
+            class="text-light fw-bold fs-5 col-12 col-md-4 d-flex flex-column align-items-center justify-content-center py-5">
+            <p><a class="text-decoration-none text-light" href="index.html">ABOUT US</a></p>
+            <p><a class="text-decoration-none text-light" href="contact.html">CONTACT US</a></p>
+            <p><a class="text-decoration-none text-light" href="rooms.html">ROOMS & RATES</a></p>
+            <p><a class="text-decoration-none text-light" href="facilities.html">FACILITIES</a></p>
+        </div>
+        <div
+            class="text-light fw-bold fs-5 col-12 col-md-4 d-flex flex-column align-items-center justify-content-even py-5 text-decoration-none">
+            <p><a class="text-decoration-none text-light" href="https://www.facebook.com" target="_blank">FACEBOOK</a>
+            </p>
+            <p><a class="text-decoration-none text-light" href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
+            </p>
+            <p><a class="text-decoration-none text-light" href="https://www.x.com" target="_blank">TWITTER</a></p>
+            <p><a class="text-decoration-none text-light" href="https://www.snapchat.com" target="_blank">SNAPCHAT</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Double Room</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .dropdown-menu .dropdown-item:hover,
+        .dropdown-menu .dropdown-item:focus {
+            background-color: rgb(6, 6, 49);
+            color: white;
+        }
+
+        .full-height-img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .border-2 {
+            border: 3px solid #dee2e6;
+            border-radius: 2px;
+        }
+
+        .booking-card {
+            max-width: 400px;
+            margin: 50px;
+            border-radius: 10px;
+            padding: 3px;
+            border: 1px solid rgb(53, 50, 50);
+
+        }
+
+        .price {
+            font-size: 2rem;
+            color: rgb(6, 6, 49);
+        }
+
+        /* .nights-box {
+            background-color: none;
+            color: #000;
+            font-weight: 500;
+            border-radius: 8px;
+        } */
+
+        .btn-counter {
+            width: 45px;
+            height: 45px;
+            font-size: 1.2rem;
+        }
+
+        .btn-minus {
+            background-color: rgb(6, 6, 49);
+            color: #fff;
+        }
+
+        .btn-plus {
+            background-color: rgb(6, 6, 49);
+            color: #fff;
+        }
+
+        .date-picker {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 12px;
+            color: #000;
+            font-weight: 500;
+        }
+
+        .btn-book {
+            background-color: rgb(6, 6, 49);
+            color: white;
+            font-size: 1.2rem;
+            padding: 12px;
+            border-radius: 5px;
+            width: 100%;
+            text-decoration: none;
+            border-style: none;
+        }
+
+        .label {
+            font-weight: 600;
+            color: #5f6a84;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .btn-book,
+        a {
+            text-decoration: none;
+            color: white
+        }
+
+        .booking-card {
+            border-radius: 10px;
+            padding: 30px;
+            border-color: #a1a5ac;
+        }
+    </style>
+</head>
+
+<body>
+     <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2 fw-bold text-primary-emphasis" href="#">UCEE SUITES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav nav-underline fw-bold ">
+                    <li class="nav-item p-3">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link active text-primary-emphasis" href="rooms.html">Rooms & Suites</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link " href="facilities.html">Facilities</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item p-3 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Events
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item fw-semibold" href="wedding.html">Wedding Planner</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="birthday.html">Birthday Planner</a></li>
+                            <li><a class="dropdown-item fw-semibold" href="party.html">Party Planner</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div>
+        <h3 class="text-center my-5 text-primary-emphasis">Standard Double Room</h3>
+    </div>
+
+
+    <section class="container-fluid d-flex justify-content-center align-items-center mb-3">
+        <div class="row ">
+            <div class=" d-flex">
+                <div class="col-sm-6 me-2" data-aos="fade-right">
+                    <img src="/images/standard double room 1.png" class="img-fluid rounded full-height-img"
+                        alt="Standard Double Room">
+                </div>
+                <div class="col-sm-6" data-aos="fade-left">
+                    <img src="/images/standard double room 1.png" class="img-fluid rounded mb-2"
+                        alt="Standard Double Room">
+                    <img src="/images/standard double room 1.png" class="img-fluid rounded" alt="Standard Double Room">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <div class="row align-items-center justify-content-center mb-5 container-fluid">
+        <div class="col-sm-6 mb-3 justify-content-center ">
+            <h4 class="text-primary-emphasis">About the place</h4>
+            <p>Minimal techno is a minimalist subgenre of techno music. It is characterized by a stripped-down
+                aesthetic that exploits the use of repetition and understated development. Minimal techno is
+                thought to have been originally developed in the early 1990s by Detroit-based
+                producers Robert Hood and Daniel Bell.</p>
+            <p>
+                Such trends saw the demise of the soul-infused techno that typified the original Detroit sound.
+                Robert Hood has noted that he and Daniel Bell both realized something
+                was missing from techno in the post-rave era.
+            </p>
+            <p>
+                Design is a plan or specification for the construction of an object or system or for the
+                implementation of an activity or process, or the result of that plan or specification in the
+                form of a prototype, product or process. The national agency for design: enabling Singapore to
+                use design for economic growth and
+                to make lives better.
+            </p>
+
+            <div class="row container-fluid">
+                <div class="col-6 col-md-3 feature-item">
+                    <img src="/images/ic_bedroom1.png" alt="">
+                    <p class="text-primary-emphasis fw-semibold">5 <small class="text-dark fw-light">bedroom</small></p>
+                </div>
+                <div class="col-6 col-md-3 feature-item">
+                    <img src="/images/ic_livingroom.png" alt="">
+                    <p class="text-primary-emphasis fw-semibold">1 <small class="text-dark fw-light"> living
+                            room</small></p>
+                </div>
+                <div class="col-6 col-md-3 feature-item">
+                    <img src="/images/ic_bedroom3.png" alt="">
+                    <p class="text-primary-emphasis fw-semibold">3 <small class="text-dark fw-light"> bathroom</small>
+                    </p>
+                </div>
+                <div class="col-6 col-md-3 feature-item">
+                    <img src="/images/ic_bedroom1.png" alt="">
+                    <p class="text-primary-emphasis fw-semibold">1 <small class="text-dark fw-light"> dining
+                            room</small></p>
+                </div>
+                <div class="col-6 col-md-3 feature-item">
+                    <img src="/images/ic_wifi 1.png" alt="">
+                    <p class="text-primary-emphasis fw-semibold">10<small class="text-dark fw-light"> mbp/s</small></p>
+                </div>
+                <div class="col-6 col-md-3 feature-item">
+                    <img src="/images/ic_ac 1.png" alt="">
+                    <p class="text-primary-emphasis fw-semibold">7<small class="text-dark fw-light"> unit ready</small>
+                    </p>
+                </div>
+                <div class="col-6 col-md-3 feature-item">
+                    <img src="/images/ic_fridge.png" alt="">
+                    <p class="text-primary-emphasis fw-semibold">2<small class="text-dark fw-light"> refigrator</small>
+                    </p>
+                </div>
+                <div class="col-6 col-md-3 feature-item">
+                    <img src="/images/ic_tv.png" alt="">
+                    <p class="text-primary-emphasis fw-semibold">5<small class="text-dark fw-light"> television</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 booking-card container-fluid">
+            <h5 class="fw-bold text-primary-emphasis">Start Booking</h5>
+            <div class="price mb-3 text-primary-emphasis">$280 <span class="text-dark fs-5">per night</span>
+            </div>
+            <div class="label">How long you will stay?
+            </div>
+            <div class="d-flex align-items-center justify-content-between nights-box px-3 py-2 mb-3">
+                <button class="btn btn-minus">-</button>
+                <span>2 nights</span>
+                <button class="btn btn-plus">+</button>
+            </div>
+            <div class="label">Pick a Date</div>
+            <div class="date-range-picker d-flex align-items-center gap-2 mb-3">
+                <input type="date" class="form-control date-picker">
+            </div>
+
+            <div class="mb-4 text-dark">You will pay <strong class="text-info text-primary-emphasis">$480 USD</strong>
+                per <strong class="text-primary-emphasis">2
+                    nights</strong>
+            </div>
+            <button class="btn-book fw-semibold"><a href="payment.html">Continue to Book</a></button>
+        </div>
+    </div>
+
+    <!-- Treasures -->
+
+    <section class="container-fluid">
+        <div class="row align-items-center px-5 mx-5">
+            <h4 class="text-primary-emphasis">Treasure to Choose</h4>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 px-5 mx-5 g-4" data-aos="fade-right">
+            <div class="col">
+                <div class="card border border-0 h-100"
+                    style="object-fit: cover; transition: transform 0.5s; cursor: pointer;"
+                    onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    <img src="/images/pic.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary-emphasis">Green Lake</h5>
+                        <p><small class="text-secondary">Nature</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border border-0 h-100"
+                    style="object-fit: cover; transition: transform 0.5s; cursor: pointer;"
+                    onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    <img src="/images/dog.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary-emphasis">Dog Clubs</h5>
+                        <p><small class="text-secondary">Pool</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border border-0 h-100"
+                    style="object-fit: cover; transition: transform 0.5s; cursor: pointer;"
+                    onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    <img src="/images/room 3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary-emphasis">Labour and Wait</h5>
+                        <p><small class="text-secondary">Shopping</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border border-0 h-100"
+                    style="object-fit: cover; transition: transform 0.5s; cursor: pointer;"
+                    onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                    <img src="/images/palm.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary-emphasis">Snorkeling</h5>
+                        <p><small class="text-secondary">Beach</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <div class="card mb-3 border border-0 container-fluid" style="max-width: 768px;">
+        <div class="row g-0">
+            <div class="col-md-4 ">
+                <div class="position-relative w-100 h-100">
+                    <img src="/images/frame.png"
+                        class="img-fluid position-absolute top-0 start-0 w-100 h-100 rounded-3 z-0"
+                        style="object-fit: contain;" alt="Frame">
+                    <img src="/images/happy family.png" class="img-fluid w-100 h-95 rounded-3 z-1 mt-5 ms-3"
+                        style="object-fit: cover;" alt="Happy Family">
+
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card-body ms-3 mt-5">
+                    <h5 class="card-title text-primary-emphasis fs-3">Happy Family</h5>
+                    <p class="card-text text-primary-emphasis fw-semibold fs-5">As a wife I can pick a great trip with
+                        my own lovely family ... thank you!
+                    </p>
+                    <p class="card-text">
+                        <small class="text-body-secondary">Anggi, Product Designer</small>
+                    </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Read Thier Story
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Anggi, Product Designer</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempora
+                                    voluptates hic odio alias accusantium, fugiat fuga placeat et atque, nihil sequi.
+                                    Placeat unde nam et at molestiae atque fuga?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer
+        class="bg-dark d-flex flex-column flex-md-row justify-content-center align-items-center mt-5 container-fluid">
+        <div
+            class="text-light col-12 col-md-4 d-flex flex-column align-items-center justify-content-evenly py-5 text-decoration-none">
+            <p class="fs-4 fw-bold">UCEE SUITES</p>
+            <p>To meet all your hospitality needs</p>
+            <p>Address : No. 4, Kalar Street, Okpanam, Asaba</p>
+            <p>Phone number : +2348109331124</p>
+            <p>Email: collinsuche89@gmail.com</p>
+        </div>
+        <div
+            class="text-light fw-bold fs-5 col-12 col-md-4 d-flex flex-column align-items-center justify-content-center py-5">
+            <p><a class="text-decoration-none text-light" href="index.html">ABOUT US</a></p>
+            <p><a class="text-decoration-none text-light" href="contact.html">CONTACT US</a></p>
+            <p><a class="text-decoration-none text-light" href="rooms.html">ROOMS & RATES</a></p>
+            <p><a class="text-decoration-none text-light" href="facilities.html">FACILITIES</a></p>
+        </div>
+        <div
+            class="text-light fw-bold fs-5 col-12 col-md-4 d-flex flex-column align-items-center justify-content-even py-5 text-decoration-none">
+            <p><a class="text-decoration-none text-light" href="https://www.facebook.com" target="_blank">FACEBOOK</a>
+            </p>
+            <p><a class="text-decoration-none text-light" href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
+            </p>
+            <p><a class="text-decoration-none text-light" href="https://www.x.com" target="_blank">TWITTER</a></p>
+            <p><a class="text-decoration-none text-light" href="https://www.snapchat.com" target="_blank">SNAPCHAT</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // animation duration
+            once: true, // animation happens only once
+        });
+    </script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
