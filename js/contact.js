@@ -14,7 +14,7 @@ function sendMail() {
             document.getElementById("email").value = "";
             document.getElementById("message").value = "";
             console.log(res);
-            alert("Thank you, we appreciate your feedback")
+            alert("Thank you, we will get back to you as soon as possible.")
         })
         .catch(err => console.log(err));
     
