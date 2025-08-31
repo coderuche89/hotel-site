@@ -14,6 +14,38 @@
             background-color: rgb(6, 6, 49);
             color: white;
         }
+
+        .carousel-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .carousel-track {
+            display: inline-block;
+            animation: scroll 30s linear infinite;
+        }
+
+        .carousel-track img {
+            height: 250px;
+            width: auto;
+            margin-right: 15px;
+            border-radius: 10px;
+            object-fit: cover;
+            display: inline-block;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+
+            /* adjust depending on width */
+        }
     </style>
 </head>
 
@@ -70,8 +102,8 @@
     <!-- About -->
     <div class="container-fluid d-flex row mt-3 pt-3">
         <div class="col-md-6 p-3">
-            <h2 class="text-primary-emphasis"  data-aos="fade-right" data-aos-delay="200">About UCEE SUITES</h2>
-            <p class="py-2 mb-3"  data-aos="fade-up" data-aos-delay="200">
+            <h2 class="text-primary-emphasis" data-aos="fade-right" data-aos-delay="200">About UCEE SUITES</h2>
+            <p class="py-2 mb-3" data-aos="fade-up" data-aos-delay="200">
                 Ladies and gentlemen, history keeps repeating itself but doesn't teach us any lessons. 'Never again' has
                 turned into 'again and again and again.'
                 So today, ladies and gentlemen, take Hotel Lunar as a wake-up call and a message to be our messenger
@@ -146,27 +178,23 @@
     <!-- Our Galleries -->
     <div class="container-fluid text-center fw-bold text-secondary-emphasis my-5">
         <h2 class="text-center fw-bold text-secondary-emphasis">Our Galleries</h2>
-        <div class="row m-4" data-aos="fade-right" data-aos-delay="200">
-            <div class="col-12 col-md-4 mb-3"
-                style="height: 250px; overflow: hidden; transition: transform 0.5s; cursor: pointer;"
-                onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
-                <img src="/images/standard sindle room 1.png" alt="Room 1" class="img-fluid w-100 h-100 rounded"
-                    style="object-fit: cover;">
+        <div class="carousel-container my-5">
+            <div class="carousel-track">
+                <img src="/images/standard sindle room 1.png" alt="Room 1">
+                <img src="/images/parking garage 1.png" alt="Room 2">
+                <img src="/images/superior room 1.png" alt="Room 3">
+                <img src="/images/Deluxe Suite with Balcony - bedroom - Private panoramas 1.png" alt="Room 4">
+                <img src="/images/swimming-pool-design-and-construction 1.png" alt="Room 5">
+                <img src="/images/superior room 1.png" alt="Room 6">
+                <img src="/images/standard sindle room 1.png" alt="Room 7">
+                <img src="/images/Deluxe Suite with Balcony - bedroom - Private panoramas 1.png" alt="Room 8">
+                <img src="/images/parking garage 1.png" alt="Room 10">
+                <img src="/images/swimming-pool-design-and-construction 1.png" alt="Room 11">
+                <img src="/images/barr 1.png" alt="Room 12">
+                <img src="/images/conference room 1.png" alt="Room 13">
             </div>
-            <div class="col-12 col-md-4 mb-3"
-                style="height: 250px; overflow: hidden; transition: transform 0.5s; cursor: pointer;"
-                onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
-                <img src="/images/bedddd33 1.png" alt="Room 2" class="img-fluid w-100 h-100 rounded"
-                    style="object-fit: cover;">
-            </div>
-            <div class="col-12 col-md-4 mb-3"
-                style="height: 250px; overflow: hidden; transition: transform 0.5s; cursor: pointer;"
-                onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
-                <img src="/images/superior room 1.png" alt="Room 3" class="img-fluid w-100 h-100 rounded"
-                    style="object-fit: cover;">
-            </div>
-
         </div>
+
     </div>
 
 
