@@ -76,7 +76,7 @@
         <!-- Booking Info -->
         <div class="text-center mb-5">
             <h3 class="fw-bold text-primary-emphasis">Payments</h3>
-            <p class="text-muted">Kindly follow the instructions below</p>
+            <p class="text-muted fw-semibold">Kindly follow the instructions below</p>
         </div>
 
         <!-- Main Content Row -->
@@ -85,13 +85,20 @@
             <!-- Left Card -->
             <div class="col-md-5">
                 <div class="card border-0">
-                    <img src="/images/pay.png" class="card-img-top" alt="Room Image">
-                    <div class="card-body d-flex">
-                        <h5 class="card-title mb-1">Pado Wae</h5> <br>
-                        <p class="text-muted small mb-2">Mataram, Indonesia</p>
-                        <h6 class="fw-bold">$480 USD <small class="text-muted">for 2 nights</small></h6>
-
-                    </div>
+                  <h4 class="text-primary-emphasis">Transfer Amount:</h4>
+                  <div class="text-primary-emphasis">
+                  <p>Tax <span class="fw-bold"> 10%</span></p>
+                  <p>Sub total: <span class="fw-bold">$480 USD</span></p>
+                  <p>Total: <span class="fw-bold"> $580 USD</span></p>
+                  </div>
+                </div>
+                <div class="d-flex mb-3">
+                    <img src="/images/logo_bank.png" alt="">
+                    <p class="text-primary-emphasis ms-4 fw-semibold"> Central Bank <br>Collins Uchenna <br> 1234567890</p>
+                </div>
+                <div class="d-flex">
+                    <img src="/images/logo_bank 2.png" alt="">
+                    <p class="text-primary-emphasis ms-4 fw-semibold">Bank Central <br>Collins Uchenna <br> 0987654321</p>
                 </div>
             </div>
 
@@ -104,28 +111,22 @@
             <div class="col-md-5">
                 <form>
                     <div class="mb-3">
-                        <label class="form-label fw-semibold text-primary-emphasis">First Name</label>
+                        <label class="form-label fw-semibold text-primary-emphasis">Upload Receipt</label>
+                        <input type="file"
+                            class="form-control border border-0 bg-secondary fw-semibold text-primary-emphasis"
+                            >
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold text-primary-emphasis">Bank Name</label>
                         <input type="text"
                             class="form-control border border-0 bg-secondary fw-semibold text-primary-emphasis"
-                            placeholder="Enter your first name" required>
+                            placeholder="Bank Name" required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label fw-semibold text-primary-emphasis">Last Name</label>
+                        <label class="form-label fw-semibold text-primary-emphasis">Account Name</label>
                         <input type="text"
                             class="form-control border border-0 bg-secondary fw-semibold text-primary-emphasis"
-                            placeholder="Enter your last name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label fw-semibold text-primary-emphasis">Email Address</label>
-                        <input type="email"
-                            class="form-control border border-0 bg-secondary fw-semibold text-primary-emphasis"
-                            placeholder="Enter your email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label fw-semibold text-primary-emphasis">Phone Number</label>
-                        <input type="tel"
-                            class="form-control border border-0 bg-secondary fw-semibold text-primary-emphasis"
-                            placeholder="Enter your phone number" required>
+                            placeholder="Account Name" required>
                     </div>
                 </form>
             </div>
